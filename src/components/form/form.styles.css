@@ -1,0 +1,35 @@
+.checkout-form {
+  width: 100%;
+}
+
+.checkout-form label {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 1px;
+  padding-left: 2px;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  display: block;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  cursor: default;
+}
+
+.checkout-form .form-control {
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 50px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 1px solid #e0e5e9;
+  border-radius: 8px !important;
+  box-shadow: 0 2px #0000001a;
+  width: 100%;
+}
+
+.checkout-form .form-control:focus {
+  outline: none;
+}
+
+.checkout-form .symbol {
+}

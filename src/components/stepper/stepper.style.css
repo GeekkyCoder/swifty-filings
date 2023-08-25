@@ -1,0 +1,142 @@
+.d-md-block {
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.checkout-list {
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 10px;
+  counter-reset: item;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkout-list li {
+  position: relative;
+  display: flex;
+  width: 20%;
+  padding: 0 1px;
+  counter-increment: item;
+  flex: 1 0;
+}
+
+.checkout-list li:after {
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 24px;
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 24px;
+  height: 24px;
+  content: counters(item, ".") "";
+  text-align: center;
+  color: #063959;
+  border-radius: 50%;
+  background: #fff;
+}
+
+a {
+  transition: all 0.15s linear;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:not([href]):not([tabindex]) {
+  text-decoration: none;
+  color: inherit;
+}
+
+.checkout-list .inner {
+  position: relative;
+  display: block;
+  padding: 4px 8px 7px 38px;
+  flex: 1 0;
+}
+
+.checkout-list li.active .inner:after,
+.checkout-list li.active .inner:before {
+  background: #549ae0;
+}
+
+.checkout-list .inner:before {
+  top: 1px;
+  transform: skew(20deg);
+}
+
+.checkout-list .inner:after {
+  bottom: 0;
+  transform: skew(-20deg);
+}
+
+.checkout-list .inner:after,
+.checkout-list .inner:before {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  left: 0;
+  height: 50%;
+  content: "";
+  background: #eee;
+}
+
+.checkout-list li.active .title,
+.checkout-list li.active .sub-title {
+  color: #fff;
+}
+
+.checkout-list .title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #063959;
+}
+
+.checkout-list .sub-title {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  color: #2e5974;
+}
+
+@media (max-width: 700px) {
+  .checkout-list {
+    padding: 0.5em;
+  }
+
+  .checkout-list li:after {
+    display: none;
+  }
+
+  .checkout-list .title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .checkout-list .sub-title {
+    margin-top: 0.5em;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .checkout-list .inner {
+    padding: 0.5em;
+  }
+}

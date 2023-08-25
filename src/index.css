@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #E0E0E0;
+}
